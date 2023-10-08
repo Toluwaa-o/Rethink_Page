@@ -12,7 +12,7 @@ module.exports = {
         resetBg: 'none'
       },
       backgroundPosition: {
-        myPosition: '2% 2%, 70% -30%, 100% 85%',
+        myPosition: '2% 2%, 70% -10%, 100% 85%',
         myPositionii: '96% 100%, 31% -20%, 95% -20%'
       },
       backgroundSize: {
