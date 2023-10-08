@@ -1,5 +1,3 @@
-
-
 export default function DropDownMenu() {
   return (
     <div className="md:self-end flex bg-white items-center py-3 px-4 gap-2 rounded-md border border-white hover:border-[#754DE8] hover:fill-[#754DE8] hover:text-[#754DE8] fill-black transition-all md:hover:scale-105">

@@ -1,5 +1,3 @@
-
-
 export default function Card({ title, icon, description }) {
   return (
     <span className="flex flex-col shadow-myShadow p-2 md:p-4 md:rounded-lg md:bg-white md:hover:scale-105 transition-all">

@@ -1,4 +1,3 @@
-
 import SideBarLeft from "../Side Bars/SideBarLeft";
 
 export default function MenuIcon() {
