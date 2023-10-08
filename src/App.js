@@ -11,9 +11,11 @@ function App() {
       <section className="hidden md:flex md:row-span-2">
         <SideBarLeft />
       </section>
-      <section className="bg-[#F1EDFD] bg-myImage bg-no-repeat bg-myPosition bg-mySize font-raleway rounded-b-3xl mb-4">
+      <section className="bg-[#F1EDFD] bg-myImage bg-no-repeat bg-myPosition bg-mySize font-raleway rounded-b-3xl mb-4 md:bg-resetBg md:bg-white">
         <Header />
+        <span className="md:p-4">
         <MainSection />
+        </span>
         <span className="md:hidden">
         <SearchBar />
         </span>
