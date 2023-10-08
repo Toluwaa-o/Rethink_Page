@@ -7,7 +7,7 @@ import SideBarLeft from "./Components/Side Bars/SideBarLeft";
 
 function App() {
   return (
-    <div className="md:grid md:grid-cols-myGrid md:grid-rows-myRows">
+    <div className="md:grid md:grid-cols-myGrid md:grid-rows-myRows max-w-[100vw] overflow-x-hidden">
       <section className="hidden md:flex md:row-span-2">
         <SideBarLeft />
       </section>

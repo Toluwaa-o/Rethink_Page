@@ -1,4 +1,4 @@
-import React from "react";
+
 import SideBarRight from "../Side Bars/SideBarRight";
 
 export default function Avatar() {

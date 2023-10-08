@@ -1,5 +1,4 @@
-import React from "react";
-import Cards from "../Cards/Cards";
+import Sections from "./Sections";
 
 export default function PopularSection() {
   return (
@@ -12,18 +11,7 @@ export default function PopularSection() {
           Explore the trending tools to create your copies fast
         </p>
       </span>
-      <div className="md:bg-[#EAE4FC] md:p-2 md:rounded-t-lg">
-        <h3 className="text-[#4D4959] font-semibold mb-2">Blog Writing</h3>
-        <Cards />
-      </div>
-      <div className="md:bg-[#EAE4FC] md:p-2">
-        <h3 className="text-[#4D4959] font-semibold mb-2">Social Media</h3>
-        <Cards />
-      </div>
-      <div className="md:bg-[#EAE4FC] md:p-2">
-        <h3 className="text-[#4D4959] font-semibold mb-2">Article Writing</h3>
-        <Cards />
-      </div>
+      <Sections />
     </section>
   );
 }
