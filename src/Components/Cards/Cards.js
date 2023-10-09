@@ -24,7 +24,7 @@ export default function Cards() {
   const CardsData = data.map((card) => <Card key={card.title} {...card} />);
 
   return (
-    <div className="overflow-x-scroll grid grid-flow-col auto-cols-[45%] gap-2 no-scrollbar p-2 md:auto-cols-[24%] md:gap-4">
+    <div className="overflow-x-scroll grid grid-flow-col auto-cols-[27%] gap-2 no-scrollbar p-2 md:auto-cols-[24%] md:gap-4">
       {CardsData}
       {CardsData}
     </div>
