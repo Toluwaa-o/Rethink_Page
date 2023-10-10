@@ -1,15 +1,23 @@
+import { useState } from "react";
+import Toggle from "./Toggle";
+
 export default function DropDownMenu() {
+  const [showDropDown, setShowDropDown] = useState(true);
+
   return (
-    <div className="md:self-end flex bg-white items-center py-3 px-4 gap-2 rounded-md border border-white hover:border-[#754DE8] hover:fill-[#754DE8] hover:text-[#754DE8] fill-black transition-all md:hover:scale-105">
-      <p className="text-sm font-medium tracking-wide">Zara Ventures</p>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-      >
-        <path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path>
-      </svg>
+    <div className="bg-white md:self-end py-3 px-4 w-fit rounded-md border border-white md:hover:fill-[#754DE8] md:hover:text-[#754DE8] fill-black transition-all md:hover:scale-105 text-sm font-medium tracking-wide grid gap-2 relative z-10">
+      <span className="flex items-center gap-2">
+        <p>Zara Ventures</p>
+        <Toggle showDropDown={showDropDown} setShowDropDown={() => setShowDropDown(!showDropDown)} />
+      </span>
+
+      {showDropDown && (
+        <span className="grid gap-2 absolute top-[3em] bg-white left-0 right-0 px-4 pb-4">
+          <p>Coming soon....</p>
+          <p>Coming soon....</p>
+          <p>Coming soon....</p>
+        </span>
+      )}
     </div>
   );
 }
