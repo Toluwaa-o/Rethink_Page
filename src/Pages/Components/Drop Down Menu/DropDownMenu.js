@@ -2,7 +2,7 @@ import { useState } from "react";
 import Toggle from "./Toggle";
 
 export default function DropDownMenu() {
-  const [showDropDown, setShowDropDown] = useState(true);
+  const [showDropDown, setShowDropDown] = useState(false);
 
   return (
     <div className="bg-white md:self-end py-3 px-4 w-fit rounded-md border border-white md:hover:fill-[#754DE8] md:hover:text-[#754DE8] fill-black transition-all md:hover:scale-105 text-sm font-medium tracking-wide grid gap-2 relative z-10">
