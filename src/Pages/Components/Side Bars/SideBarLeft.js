@@ -40,9 +40,7 @@ export default function SideBarLeft({ display }) {
             </Link>
           </li>
           <li className="md:justify-self-end">
-            <Link to="/rethink">
-              <Logout />
-            </Link>
+            <Logout />
           </li>
         </span>
       </ul>
