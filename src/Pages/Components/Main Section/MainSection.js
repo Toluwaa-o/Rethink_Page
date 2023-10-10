@@ -1,12 +1,15 @@
 import SideText from "../Side Text/SideText";
 import DropDownMenu from "../Drop Down Menu/DropDownMenu";
+import { useContext } from "react";
+import { AuthenticationContext } from "../../../Context/AuthContext";
 
 export default function MainSection() {
+  const { displayName } = useContext(AuthenticationContext);
   return (
     <div className="p-4 my-4 md:my-[unset] md:flex md:justify-between md:bg-myImageii md:bg-[#F1EDFD] md:bg-no-repeat md:bg-myPositionii md:bg-mySizeii md:rounded-3xl md:w-[95%] md:m-auto md:py-14">
       <span className="md:grid md:gap-2 md:self-center">
         <h1 className="font-morangaSubsitute text-[#4D4959] text-4xl tracking-wider font-semibold mb-2 md:text-5xl md:font-medium">
-          Hey James!
+          Hey {displayName}!
         </h1>
         <p className="font-raleway md:text-lg md:tracking-wide">
           Lets create something awesome today ✨💫
