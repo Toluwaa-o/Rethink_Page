@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function SideBarRight({ display }) {
   return (
     <nav
@@ -7,7 +9,7 @@ export default function SideBarRight({ display }) {
     >
       <ul className="flex flex-col md:flex-row items-center justify-center gap-7 md:justify-between md:w-full">
         <li>
-          <a href="/">
+          <Link to="/rethink">
             <svg
               width="28"
               height="28"
@@ -22,10 +24,10 @@ export default function SideBarRight({ display }) {
                 />
               </g>
             </svg>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/">
+          <Link to="/rethink">
             <svg
               width="28"
               height="28"
@@ -40,7 +42,7 @@ export default function SideBarRight({ display }) {
                 />
               </g>
             </svg>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

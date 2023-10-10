@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ContentIcon from "./Icons/ContentIcon";
 import Home from "./Icons/Home";
 import Logout from "./Icons/Logout";
@@ -13,35 +14,35 @@ export default function SideBarLeft({ display }) {
       <ul className="flex flex-col items-center gap-7 md:py-4 h-[90%] md:fixed md:justify-between">
         <span className="flex flex-col items-center justify-center gap-7 md:gap-[3em]">
           <li className="hidden md:block">
-            <a href="/">
+            <Link to="/rethink">
               <img
                 src="/Images/Logo.png"
                 alt="Logo"
                 className="md:hover:scale-105 transition-all"
               />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="/rethink">
               <Home />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="/rethink">
               <ContentIcon />
-            </a>
+            </Link>
           </li>
         </span>
         <span className="flex flex-col items-center justify-center gap-7 md:gap-[3em]">
           <li className="md:justify-self-end">
-            <a href="/">
+            <Link to="/rethink">
               <Settings />
-            </a>
+            </Link>
           </li>
           <li className="md:justify-self-end">
-            <a href="/">
+            <Link to="/rethink">
               <Logout />
-            </a>
+            </Link>
           </li>
         </span>
       </ul>
