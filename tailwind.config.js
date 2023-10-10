@@ -13,7 +13,7 @@ module.exports = {
       },
       backgroundPosition: {
         myPosition: '2% 2%, 70% -10%, 100% 85%',
-        myPositionii: '96% 100%, 31% -20%, 95% -20%'
+        myPositionii: '96% 100%, 29% -23%, 95% -20%'
       },
       backgroundSize: {
         mySize: 'auto, 370px, auto',
