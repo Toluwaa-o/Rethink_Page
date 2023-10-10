@@ -4,28 +4,42 @@ import { useContext } from "react";
 import { AuthenticationContext } from "../Context/AuthContext";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import { Alert } from "@mui/material";
+import { useState } from "react";
 
 export default function AuthPage() {
   const { setAuthState } = useContext(AuthenticationContext);
   const navigate = useNavigate();
+  const [showError, setShowError] = useState(false);
 
   const handleGoogle = (e) => {
     const provider = new GoogleAuthProvider();
     return signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
-        console.log(user.displayName);
         setAuthState({
           displayName: user.displayName.split(" ")[0],
           photoURL: user.photoURL,
         });
+        localStorage.setItem(
+          "firebaseData",
+          JSON.stringify({
+            displayName: user.displayName.split(" ")[0],
+            photoURL: user.photoURL,
+          })
+        );
       })
       .then(() => navigate("/rethink"))
-      .catch((err) => console.log(err));
+      .catch((err) => setShowError(true));
   };
 
   return (
     <div className="p-4 grid grid-flow-row font-raleway text-lg text-center font-bold tracking-wide gap-4 max-w-[100vw] h-[100vh] place-content-center">
+      {showError && (
+        <Alert severity="error" className="absolute top-0 left-0 right-0">
+          Something went wrong, please try again!
+        </Alert>
+      )}
       <span className="mb-4">
         <h1 className="font-morangaSubsitute text-[#4D4959] text-4xl tracking-wider font-semibold mb-4">
           Welcome to the ReThink Webpage!

@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router";
+
 export default function Logout() {
+  const navigate = useNavigate();
+  const logOutHandler = () => {
+    localStorage.clear();
+    navigate("/");
+  };
+
   return (
     <svg
       width="21"
@@ -6,6 +14,7 @@ export default function Logout() {
       viewBox="0 0 21 21"
       className="md:hover:fill-[#5E3EBA] fill-[#4D4959] md:hover:scale-105 transition-all"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={logOutHandler}
     >
       <path
         id="Vector"
