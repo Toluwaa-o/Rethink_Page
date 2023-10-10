@@ -15,6 +15,7 @@ export default function Avatar() {
         alt="avatar"
         className="md:hover:scale-105 transition-all w-[35px] rounded-md"
         onClick={() => setDisplay(!display)}
+        role="button"
       />
     </span>
   );

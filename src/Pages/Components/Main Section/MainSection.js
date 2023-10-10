@@ -14,7 +14,7 @@ export default function MainSection() {
         <p className="font-raleway md:text-lg md:tracking-wide">
           Lets create something awesome today ✨💫
         </p>
-        <p className="hidden md:block md:border-2 border-[#754DE8] md:bg-white md:text-[#754DE8] md:w-fit md:py-2 md:px-10 md:rounded-2xl md:mt-8 md:font-medium hover:bg-[#754DE8] hover:text-white transition-all">
+        <p role="button" className="hidden md:block md:border-2 border-[#754DE8] md:bg-white md:text-[#754DE8] md:w-fit md:py-2 md:px-10 md:rounded-2xl md:mt-8 md:font-medium hover:bg-[#754DE8] hover:text-white transition-all">
           Start Creating
         </p>
       </span>

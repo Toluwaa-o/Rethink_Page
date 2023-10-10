@@ -15,6 +15,7 @@ export default function Logout() {
       className="md:hover:fill-[#5E3EBA] fill-[#4D4959] md:hover:scale-105 transition-all"
       xmlns="http://www.w3.org/2000/svg"
       onClick={logOutHandler}
+      role="button"
     >
       <path
         id="Vector"

@@ -6,8 +6,11 @@ export default function MenuIcon() {
 
   return (
     <span className="relative md:hidden">
-      <div className="bg-[#ffffff80] w-fit p-1 rounded-lg" onClick={() => setDisplay(!display)}>
-        <img src="/Images/ep_menu.svg" alt="menu" />
+      <div
+        className="bg-[#ffffff80] w-fit p-1 rounded-lg"
+        onClick={() => setDisplay(!display)}
+      >
+        <img src="/Images/ep_menu.svg" role="button" alt="menu" />
       </div>
 
       <SideBarLeft display={display} />
